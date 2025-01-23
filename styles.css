@@ -1,0 +1,515 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: rgb(142, 232, 6);
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    position: relative;
+    padding: 2px 20px;
+    color: white;
+}
+
+.header-background .background-image {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.logo {
+    left: 0;
+    top: 0;
+}
+
+.logo img {
+    width: 200px;
+    margin: 20px auto;
+    padding-left: 1em;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.join-btn {
+    background-color: limegreen;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.benefits {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 25%;
+    gap: 2em;
+}
+
+.benefits span {
+    display: block;
+    margin-top: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#feature-image {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#feature-image .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#feature-image .front {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    z-index: 2;
+}
+
+.web-view #web-view-img {
+    width: 400px;
+    height: 300px;
+}
+
+.whole-bottom-section {
+    background-color: #181916;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px
+}
+
+.wait {
+    display: flex;
+    justify-content: center;
+    background-color: #242620;
+    margin-top: 4rem;
+    width: 47rem;
+    margin-left: 14rem;
+    height: 17rem;
+    border-radius: 1em;
+}
+
+.div1 {
+    margin-top: 5em;
+}
+
+span {
+    font-family: Open Sans;
+    font-size: 28px;
+    font-weight: 800;
+    /* line-height: 78.99px; */
+    text-align: left;
+}
+
+.div2 img {
+    width: 170px;
+    height: 170px;
+    margin-top: 3em;
+    margin-left: 9rem;
+}
+
+.learning-path {
+    display: flex;
+    justify-content: center;
+}
+
+.learning-path img {
+    width: 60rem;
+    margin-top: 50px;
+}
+
+
+/* Container styling */
+
+
+/* .border-container {
+    position: relative;
+    height: 300px;
+    width: 100px;
+    margin: auto;
+    border: 1px solid transparent;
+    overflow: hidden;
+} */
+
+.bord {
+    position: relative;
+    /* Create a positioning context */
+    width: 100%;
+    /* Adjust section width */
+    height: 400px;
+    /* Set height for the section */
+    /* background-color: #f4f4f4; */
+    /* Light background color */
+    overflow: hidden;
+    /* Ensure no content overflows */
+}
+
+.border-container {
+    position: absolute;
+    /* Allows overlapping */
+    top: 50%;
+    /* Position the first div */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 200px;
+    /* background-color: #3498db; */
+    /* Blue background */
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    /* Place it below the second div */
+    border-radius: 10px;
+    /* Optional rounded corners */
+}
+
+
+/* Styling for the top horizontal line */
+
+.top-line {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* Stretch across the top */
+    height: auto;
+}
+
+
+/* Styling for the bottom horizontal line */
+
+.bottom-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* Stretch across the bottom */
+    height: auto;
+}
+
+.border-container.stretch {
+    width: 100%;
+}
+
+
+/* Styling for the left vertical line */
+
+.left-line {
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    transform: translateY(-7%);
+    width: auto;
+    height: 15rem;
+    /* Stretch down the left side */
+}
+
+
+/* Styling for the right vertical line */
+
+.right-line {
+    position: absolute;
+    top: 7%;
+    right: 15%;
+    transform: translateY(-7%);
+    width: auto;
+    height: 15rem;
+    /* Stretch down the right side */
+}
+
+
+/* Styling for top-left ellipse */
+
+.top-left {
+    position: absolute;
+    top: 18.6%;
+    left: 14.8%;
+    width: 7px;
+    /* Adjust ellipse size */
+    height: auto;
+}
+
+
+/* Styling for top-right ellipse */
+
+.top-right {
+    position: absolute;
+    top: 18.6%;
+    right: 14.7%;
+    width: 7px;
+    /* Adjust ellipse size */
+    height: auto;
+}
+
+
+/* Styling for bottom-left ellipse */
+
+.bottom-left {
+    position: absolute;
+    bottom: 0%;
+    left: 14.8%;
+    width: 7px;
+    /* Adjust ellipse size */
+    height: auto;
+}
+
+
+/* Styling for bottom-right ellipse */
+
+.bottom-right {
+    position: absolute;
+    bottom: 0%;
+    right: 14.7%;
+    width: 7px;
+    /* Adjust ellipse size */
+    height: auto;
+}
+
+.benefit {
+    position: absolute;
+    text-align: center;
+    /* Allows overlapping */
+    top: 50%;
+    /* Adjust top to create overlap */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Adjust left to create overlap */
+    width: 50rem;
+    height: 5rem;
+    /* background-color: #e74c3c; */
+    /* Red background */
+    color: white;
+    padding: 20px;
+    z-index: 2;
+    /* Place it above the first div */
+    border-radius: 10px;
+    /* Optional rounded corners */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+    /* Optional shadow */
+}
+
+.bene {
+    font-size: xx-large
+}
+
+.box-container {
+    display: flex;
+    padding: 0 6rem;
+    gap: 2em;
+}
+
+.first-div {
+    margin-top: 4rem;
+    /* background-color: red; */
+}
+
+.second-div {
+    margin-top: 4rem;
+    /* background-color: aqua; */
+}
+
+.third-div {
+    margin-top: 4rem;
+    /* background-color: bisque; */
+}
+
+.white-box {
+    width: 4em;
+    height: 4em;
+    /* border: 1px solid black; */
+    /* margin-left: 4rem; */
+    background-color: #fff;
+}
+
+.lorem {
+    width: 100%;
+    /* margin-left: 4rem; */
+}
+
+.products {
+    margin-top: 5em;
+}
+
+.product-head {
+    padding: 0 3.4em;
+    font-size: 3em;
+}
+
+.product-body {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.pro {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.base {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.desc1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    font-size: large;
+    color: #9BEC00;
+    z-index: 10;
+}
+
+.desc2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    font-size: large;
+    color: #9BEC00;
+    z-index: 10;
+}
+
+.over {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    z-index: 2;
+}
+
+.support {
+    position: relative;
+    margin-top: 5em;
+    margin-left: 5%;
+    background-color: #242620;
+    text-align: center;
+    width: 60%;
+    height: 150px;
+    left: 200px;
+}
+
+.support #img1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 660px;
+    width: 70px;
+}
+
+.support #img2 {
+    position: absolute;
+    top: 2em;
+    right: 0;
+    left: 710px;
+    width: 25px;
+}
+
+.support #img3 {
+    position: absolute;
+    bottom: 0;
+    right: 650px;
+    width: 70px;
+}
+
+.support #img4 {
+    position: absolute;
+    bottom: 1.6em;
+    /* left: 0; */
+    right: 710px;
+    width: 28px;
+}
+
+.support #img5 {
+    position: absolute;
+    bottom: 3.5em;
+    /* left: 0; */
+    right: 730px;
+    width: 13px;
+}
+
+.support-container #heading {
+    font-family: "Raleway", serif;
+    font-weight: 600;
+    line-height: 56.35px;
+    font-size: 30px;
+}
+
+.support-container #desc {
+    font-family: "Open Sans", serif;
+    font-size: 12px;
+}
+
+.support .btn {
+    margin-top: 1.5rem;
+    background-color: limegreen;
+    border: none;
+    padding: 10px 20px;
+    /* margin-top: 20px; */
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+#ft {
+    text-align: center;
+    padding: 4em;
+    font-family: "Poppins", serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+}
